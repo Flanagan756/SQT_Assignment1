@@ -12,9 +12,9 @@ namespace InsuranceService
         int age;
         public static void Main(string[] args)
         {
-            Console.WriteLine(CalcPremium(40,"urabn"));
+            
         }
-        public static double CalcPremium(int age, string location)
+        public double CalcPremium(int age, string location)
         {
             double premium;
 
