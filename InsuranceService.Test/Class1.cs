@@ -18,7 +18,7 @@ namespace InsuranceService.Test
             InsuranceService.Program p1 = new Program();
 
             //Act
-            double actualResult = p1.CalcPremium(17, "urban");
+            double actualResult = p1.CalcPremium(-1, "urban");
 
             //Assert
             Assert.That(actualResult, Is.EqualTo(0));
@@ -31,10 +31,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p2 = new Program();
 
             //Act
-            double actualResult = p2.CalcPremium(18, "urban");
+            double actualResult = p2.CalcPremium(0, "urban");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(50));
+            Assert.That(actualResult, Is.EqualTo(0));
 
         }
         [Test]
@@ -44,10 +44,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p3 = new Program();
 
             //Act
-            double actualResult = p3.CalcPremium(29, "urban");
+            double actualResult = p3.CalcPremium(17, "urban");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(50));
+            Assert.That(actualResult, Is.EqualTo(0));
 
         }
         [Test]
@@ -57,10 +57,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p4 = new Program();
 
             //Act
-            double actualResult = p4.CalcPremium(30, "urban");
+            double actualResult = p4.CalcPremium(18, "urban");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(35));
+            Assert.That(actualResult, Is.EqualTo(50));
 
         }
         [Test]
@@ -70,10 +70,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p5 = new Program();
 
             //Act
-            double actualResult = p5.CalcPremium(31, "urban");
+            double actualResult = p5.CalcPremium(29, "urban");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(35));
+            Assert.That(actualResult, Is.EqualTo(50));
 
         }
         [Test]
@@ -83,10 +83,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p6 = new Program();
 
             //Act
-            double actualResult = p6.CalcPremium(49, "urban");
+            double actualResult = p6.CalcPremium(30, "urban");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(17.5));
+            Assert.That(actualResult, Is.EqualTo(50));
 
         }
         [Test]
@@ -96,10 +96,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p7 = new Program();
 
             //Act
-            double actualResult = p7.CalcPremium(50, "urban");
+            double actualResult = p7.CalcPremium(31, "urban");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(0));
+            Assert.That(actualResult, Is.EqualTo(35));
 
         }
         [Test]
@@ -109,10 +109,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p8 = new Program();
 
             //Act
-            double actualResult = p8.CalcPremium(18, "rural");
+            double actualResult = p8.CalcPremium(35, "urban");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(60));
+            Assert.That(actualResult, Is.EqualTo(35));
 
         }
         [Test]
@@ -122,10 +122,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p9 = new Program();
 
             //Act
-            double actualResult = p9.CalcPremium(34, "rural");
+            double actualResult = p9.CalcPremium(36, "urban");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(60));
+            Assert.That(actualResult, Is.EqualTo(35));
 
         }
         [Test]
@@ -135,10 +135,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p10 = new Program();
 
             //Act
-            double actualResult = p10.CalcPremium(35, "rural");
+            double actualResult = p10.CalcPremium(49, "urban");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(60));
+            Assert.That(actualResult, Is.EqualTo(35));
 
         }
         [Test]
@@ -148,10 +148,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p11 = new Program();
 
             //Act
-            double actualResult = p11.CalcPremium(36, "rural");
+            double actualResult = p11.CalcPremium(50, "urban");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(50));
+            Assert.That(actualResult, Is.EqualTo(17.5));
 
         }
         [Test]
@@ -161,10 +161,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p12 = new Program();
 
             //Act
-            double actualResult = p12.CalcPremium(49, "rural");
+            double actualResult = p12.CalcPremium(-1, "rural");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(50));
+            Assert.That(actualResult, Is.EqualTo(0));
 
         }
         [Test]
@@ -174,10 +174,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p13 = new Program();
 
             //Act
-            double actualResult = p13.CalcPremium(50, "rural");
+            double actualResult = p13.CalcPremium(0, "rural");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(25));
+            Assert.That(actualResult, Is.EqualTo(0));
 
         }
         [Test]
@@ -187,7 +187,7 @@ namespace InsuranceService.Test
             InsuranceService.Program p14 = new Program();
 
             //Act
-            double actualResult = p14.CalcPremium(0, "urban");
+            double actualResult = p14.CalcPremium(17, "rural");
 
             //Assert
             Assert.That(actualResult, Is.EqualTo(0));
@@ -200,10 +200,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p15 = new Program();
 
             //Act
-            double actualResult = p15.CalcPremium(-1, "urban");
+            double actualResult = p15.CalcPremium(18, "rural");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(0));
+            Assert.That(actualResult, Is.EqualTo(60));
 
         }
         [Test]
@@ -213,10 +213,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p16 = new Program();
 
             //Act
-            double actualResult = p16.CalcPremium(18, "city");
+            double actualResult = p16.CalcPremium(29, "rural");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(0));
+            Assert.That(actualResult, Is.EqualTo(60));
 
         }
         [Test]
@@ -226,10 +226,10 @@ namespace InsuranceService.Test
             InsuranceService.Program p17 = new Program();
 
             //Act
-            double actualResult = p17.CalcPremium(0, "city");
+            double actualResult = p17.CalcPremium(30, "rural");
 
             //Assert
-            Assert.That(actualResult, Is.EqualTo(0));
+            Assert.That(actualResult, Is.EqualTo(60));
 
         }
         [Test]
@@ -239,13 +239,207 @@ namespace InsuranceService.Test
             InsuranceService.Program p18 = new Program();
 
             //Act
-            double actualResult = p18.CalcPremium(17, "rural");
+            double actualResult = p18.CalcPremium(31, "rural");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(60));
+
+        }
+        [Test]
+        public static void test19()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(35, "rural");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(60));
+
+        }
+        [Test]
+        public static void test20()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(36, "rural");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(50));
+
+        }
+        [Test]
+        public static void test21()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(49, "rural");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(50));
+
+        }
+        [Test]
+        public static void test22()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(50, "rural");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(25));
+
+        }
+        [Test]
+        public static void test23()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(-1, "city");
 
             //Assert
             Assert.That(actualResult, Is.EqualTo(0));
 
         }
+        [Test]
+        public static void test24()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
 
+            //Act
+            double actualResult = p18.CalcPremium(0, "city");
 
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(0));
+
+        }
+        [Test]
+        public static void test25()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(17, "city");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(0));
+
+        }
+        [Test]
+        public static void test26()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(18, "city");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(0));
+
+        }
+        [Test]
+        public static void test27()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(29, "city");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(0));
+
+        }
+        [Test]
+        public static void test28()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(30, "city");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(0));
+
+        }
+        [Test]
+        public static void test29()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(31, "city");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(0));
+
+        }
+        [Test]
+        public static void test30()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(35, "city");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(0));
+
+        }
+        [Test]
+        public static void test31()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(36, "city");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(0));
+
+        }
+        [Test]
+        public static void test32()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(49, "city");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(0));
+
+        }
+        [Test]
+        public static void test33()
+        {
+            //Arrange
+            InsuranceService.Program p18 = new Program();
+
+            //Act
+            double actualResult = p18.CalcPremium(50, "city");
+
+            //Assert
+            Assert.That(actualResult, Is.EqualTo(0));
+
+        }
+   
     }
 }
